@@ -12,3 +12,7 @@ export const SpaceY = styled.div`
   width: 100%;
   ${hasProp('y', ({ y }) => `height: ${y};`)}
 `
+
+export const RelativeContainer = styled.div`
+  position: relative;
+`

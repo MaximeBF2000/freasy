@@ -12,6 +12,11 @@ export const Expense = styled.li`
   &:nth-child(2n + 1) {
     background-color: ${fromTheme('colors.black_1', c => rgba(c, 0.15))};
   }
+
+  &:hover,
+  &:focus {
+    background-color: ${fromTheme('colors.black_1', c => rgba(c, 0.3))};
+  }
 `
 
 export const Text = styled.p``

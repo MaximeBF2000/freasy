@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { fromTheme } from '../../styles'
 
 export const MainContainer = styled.main`
-  padding: 2rem;
+  padding: 0 0 2rem 2rem;
   border-radius: 0.3rem;
 `
 
