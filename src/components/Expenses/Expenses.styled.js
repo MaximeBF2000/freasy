@@ -1,13 +1,16 @@
 import styled from 'styled-components'
 import { rgba } from 'polished'
 import { fromTheme, hasProp } from '../../styles'
+import { Input, Button } from '..'
 
 export const ExpensesContainer = styled.div``
 
 export const List = styled.ul`
-  max-height: 200px;
+  height: 200px;
+  min-height: 200px;
   margin-bottom: 2rem;
   overflow-y: scroll;
+  resize: vertical;
 `
 
 export const EndListCover = styled.div`
@@ -30,4 +33,13 @@ export const EndListCover = styled.div`
   }
 `
 
-export const AddExpenseContainer = styled.div``
+export const AddExpenseContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`
+
+export const ExpenseInput = styled(Input)``
+
+export const AddExpenseButton = styled(Button)``

@@ -7,7 +7,9 @@ import {
   ExpensesContainer,
   List,
   AddExpenseContainer,
-  EndListCover
+  EndListCover,
+  ExpenseInput,
+  AddExpenseButton
 } from './Expenses.styled'
 
 export const Expenses = () => {
@@ -28,7 +30,11 @@ export const Expenses = () => {
         </List>
         <EndListCover className={cx({ showEndListCover })} />
       </RelativeContainer>
-      <AddExpenseContainer>add expense</AddExpenseContainer>
+      <AddExpenseContainer>
+        <ExpenseInput placeholder="Expense" />
+        <ExpenseInput placeholder="Amount" />
+        <AddExpenseButton>Add expense</AddExpenseButton>
+      </AddExpenseContainer>
     </ExpensesContainer>
   )
 }
